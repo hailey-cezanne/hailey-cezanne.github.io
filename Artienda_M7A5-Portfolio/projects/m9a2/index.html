@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curbside Thai - Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav aria-label="Portfolio"><a class="portfolio-return" href="../../index.html#projects">← Back to portfolio</a></nav>
+  <main class="card">
+    <p class="eyebrow">Curbside Thai</p>
+    <h1>Checkout</h1>
+
+    <div class="field">
+      <label for="dish">Dish</label>
+
+      <select id="dish">
+        <option value="180">Pad Thai</option>
+        <option value="220">Green Curry</option>
+        <option value="150">Tom Yum</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="qty">Quantity</label>
+      <input
+        type="number"
+        id="qty"
+        value="1"
+        min="1"
+        step="1"
+      >
+    </div>
+
+    <div class="field">
+      <label for="delivery">
+        <input type="checkbox" id="delivery">
+        Add delivery
+      </label>
+    </div>
+
+    <p class="line">
+      <span>Subtotal</span>
+      <strong>₱<span id="subtotal">0.00</span></strong>
+    </p>
+
+    <p class="line">
+      <span>Total</span>
+      <strong>₱<span id="total">0.00</span></strong>
+    </p>
+
+    <p class="footnote">Both figures show two decimal places.</p>
+  </main>
+</body>
+</html>
