@@ -1,0 +1,295 @@
+:root {
+  --ink: #1e2530;
+  --muted: #5b6675;
+  --brand: #0b7a5b;
+  --brand-2: #e08a00;
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --line: #e2e5e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fluid container */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header + nav */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: var(--brand);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.hero-img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.hero-text p {
+  color: var(--muted);
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.button {
+  display: inline-block;
+  background: var(--brand-2);
+  color: #ffffff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Cards */
+.highlights {
+  padding: 24px 0 56px;
+}
+
+.highlights h2,
+.page-title {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.page-intro {
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.card-row,
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.menu-grid {
+  padding-bottom: 56px;
+}
+
+.card {
+  flex: 1 1 280px;
+  max-width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.card .price {
+  margin-top: 8px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* Contact */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 8px 0 56px;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+}
+
+.hours {
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  max-width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin: 14px 0 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .button {
+  margin-top: 18px;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  color: var(--muted);
+}
+
+/* Tablet and phone layout */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 32px 0;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex-basis: 100%;
+  }
+}
+
+/* Small phone layout */
+@media (max-width: 520px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .site-nav {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .contact-form {
+    padding: 18px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Navigation back to the portfolio. */
+.portfolio-return { display: inline-block; margin: 16px; padding: 8px 12px; color: #151515; background: #fff7ef; border: 1px solid #7e7b22; border-radius: 8px; font: 700 14px Arial, sans-serif; text-decoration: none; }
+.portfolio-return:focus-visible { outline: 3px solid #151515; outline-offset: 3px; }

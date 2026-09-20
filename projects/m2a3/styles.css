@@ -1,0 +1,109 @@
+/* ============================================================
+   MY DESIGN SYSTEM - use only these values
+   ------------------------------------------------------------
+   background  #fdf8f3      text/ink   #2f2f2f
+   primary     #7d9d7a      accent     #e7a6b5
+   headings    32px / 24px  body       16px
+   spacing     8 / 16 / 24 / 32 px
+   fonts       Georgia (headings) / Arial (body)
+   ------------------------------------------------------------
+   RULE: if a value is not in this legend, it does not go in this file.
+   ============================================================ */
+
+body {
+  background: #FDF8F3;
+  color: #2F2F2F;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.site-header {
+  background: #7D9D7A;
+  padding: 16px 32px;
+}
+
+.site-name {
+  color: #FDF8F3;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.nav-list {
+  padding: 0;
+}
+
+.nav-link {
+  color: #FDF8F3;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.hero {
+  padding: 32px;
+}
+
+.hero-title {
+  color: #7D9D7A;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.hero-text {
+  font-size: 16px;
+}
+
+.btn {
+  background: #E7A6B5;
+  color: #2F2F2F;
+  padding: 16px 24px;
+  text-decoration: none;
+}
+
+.projects {
+  padding: 32px;
+}
+
+.section-title {
+  color: #7D9D7A;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.card {
+  background: #FDF8F3;
+  border: 1px solid #7D9D7A;
+  margin: 16px 0;
+  padding: 24px;
+}
+
+.card-title {
+  color: #7D9D7A;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.card-desc {
+  font-size: 16px;
+}
+
+.card-link {
+  color: #E7A6B5;
+  text-decoration: none;
+}
+
+.site-footer {
+  background: #7D9D7A;
+  padding: 16px 32px;
+}
+
+.footer-text {
+  color: #FDF8F3;
+}
+/* Standalone portfolio demo navigation and small-screen support. */
+* { box-sizing: border-box; }
+.portfolio-return { display: inline-block; margin: 16px; padding: 10px 16px; color: #151515; background: #fff7ef; border: 1px solid #7e7b22; border-radius: 8px; font: 700 14px Arial, sans-serif; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 3px solid #151515; outline-offset: 4px; }
+.nav-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.hero-text { max-width: 70ch; line-height: 1.6; }
